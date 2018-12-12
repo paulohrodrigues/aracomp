@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>
+      Criar Publicação
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background-color: #AEE1B8">
+  <ion-list>
+    <img src="../../assets/imgs/ara.png" alt="">
+    <br><br><br>
+    <ion-item style="background-color: #AEE1B8">
+      <ion-label fixed style="color:rgb(0, 0, 0);"><b>Foto</b></ion-label>
+      <ion-input type="file" id="file"></ion-input>
+    </ion-item>
+
+    <ion-item style="background-color: #AEE1B8">
+      <ion-label fixed style="color:rgb(0, 0, 0);"><b>Titulo</b></ion-label>
+      <ion-input type="text" [(ngModel)]="data.title"></ion-input>
+    </ion-item>
+    <ion-item style="background-color: #AEE1B8">
+      <ion-label fixed style="color:rgb(0, 0, 0);"><b>Descrição</b></ion-label>
+      <ion-input type="text" [(ngModel)]="data.description"></ion-input>
+    </ion-item>
+  </ion-list>
+
+<div padding>
+  <button ion-button color="dark" block (click)="save()">Criar Publicação</button>
+</div>
+</ion-content>
